@@ -1,0 +1,93 @@
+<div class="max-w-screen-2xl">
+  <app-header></app-header>
+  <app-banner></app-banner>
+  <div class="p-4">
+    <app-service-card
+      [title]="card1Title"
+      [description]="card1Description"
+      [buttonText]="card1ButtonText"
+      [reverse]="reverse1"
+      [image]="image1"
+    ></app-service-card>
+    <app-service-card
+      [title]="card2Title"
+      [description]="card2Description"
+      [buttonText]="card2ButtonText"
+      [reverse]="reverse2"
+      [image]="image2"
+    ></app-service-card>
+    <app-service-card
+      [title]="card3Title"
+      [description]="card3Description"
+      [buttonText]="card3ButtonText"
+      [reverse]="reverse3"
+      [image]="image3"
+    ></app-service-card>
+    <div
+      class="flex min-h-screen flex-col justify-center items-center px-8 gap-10"
+    >
+      <div class="flex flex-col justify-center items-center gap-1">
+        <p class="text-center font-light text-4xl text-[#5E677F]">
+          How It Works
+        </p>
+        <div class="w-24 h-1 bg-[#E92E63] rounded-full shadow-2xl"></div>
+      </div>
+      <div class="flex flex-col lg:flex-row gap-8 mt-4">
+        <app-process-card
+          [title]="cardProcessTitle1"
+          [description]="cardProcessDescription1"
+          [image]="cardProcessImage1"
+        ></app-process-card>
+        <app-process-card
+          [title]="cardProcessTitle2"
+          [description]="cardProcessDescription2"
+          [image]="cardProcessImage2"
+        ></app-process-card>
+        <app-process-card
+          [title]="cardProcessTitle3"
+          [description]="cardProcessDescription3"
+          [image]="cardProcessImage3"
+        ></app-process-card>
+        <app-process-card
+          [title]="cardProcessTitle4"
+          [description]="cardProcessDescription4"
+          [image]="cardProcessImage4"
+        ></app-process-card>
+      </div>
+    </div>
+    <div
+      class="flex min-h-screen flex-col justify-center items-center px-8 gap-10"
+    >
+      <div class="flex flex-col justify-center items-center gap-1">
+        <p class="text-center font-light text-4xl text-[#5E677F] mt-5 md:mt-1">
+          Sitters Profiles
+        </p>
+        <div class="w-24 h-1 bg-[#E92E63] rounded-full shadow-2xl"></div>
+      </div>
+      <div class="flex flex-col lg:flex-row gap-8 mt-4">
+        <app-profile-card
+          [title]="profileCardTitle1"
+          [type]="profileCardType1"
+          [image]="profileCardImage1"
+        ></app-profile-card>
+        <app-profile-card
+          [title]="profileCardTitle2"
+          [type]="profileCardType2"
+          [image]="profileCardImage2"
+        ></app-profile-card>
+        <app-profile-card
+          [title]="profileCardTitle3"
+          [type]="profileCardType3"
+          [image]="profileCardImage3"
+        ></app-profile-card>
+        <app-profile-card
+          [title]="profileCardTitle4"
+          [type]="profileCardType4"
+          [image]="profileCardImage4"
+        ></app-profile-card>
+      </div>
+    </div>
+
+    <app-footer></app-footer>
+  </div>
+</div>

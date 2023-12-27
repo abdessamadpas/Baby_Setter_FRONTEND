@@ -1,0 +1,34 @@
+<div class="flex flex-col bg-[#E7EFF8] w-full shadow-xl z-10" >
+  <div
+    class="flex justify-between items-center px-[14px] py-[21px] w-full h-full"
+  >
+    <div class="text-[25px] font-extrabold text-[#A51B65] flex gap-2 justify-center items-center">
+      <img src="../../../../assets/Avatar.png" alt="" width="40px" height="35px" />
+
+      <p>BabbySitter</p>
+
+
+    </div>
+    <div class="md:flex justify-center items-center gap-2 md:gap-8 hidden md:visible ">
+      <button class="px-8 py-2 bg-[#E92E63] rounded-full text-white font-bold">
+        Login
+      </button>
+      <button class="px-8 py-2 bg-[#00796B] rounded-full text-white font-bold">
+        Registration
+      </button>
+    </div>
+    <div class="cursor-pointer md:hidden">
+      <ng-icon name="featherMenu" size="24" (click)="toggleMobileMenu()"></ng-icon>
+
+
+    </div>
+   
+      
+    <div *ngIf="isMobileMenuOpen" class="md:hidden">
+      <button class="px-8 py-2 bg-[#E92E63] rounded-full text-white font-bold">Login</button>
+      <button class="px-8 py-2 bg-[#3b9845] rounded-full text-white font-bold">Registration</button>
+    </div>
+  </div>
+
+
+</div>

@@ -1,0 +1,14 @@
+<div class="p-4 min-h-screen flex items-center justify-center">
+  <div class="flex flex-col lg:flex-row px-5 w-full gap-8" [ngClass]="{'lg:flex-row-reverse': reverse, 'lg:flex-row': !reverse}">
+      <div class="max-w-[100%]  lg:max-w-[50%] flex flex-col gap-8 w-full">
+      <p class="text-4xl md:text-6xl font-light text-[#5E677F]">{{title}}</p>
+      <p class=" text-lg md:text-xl ">
+       {{description}}
+      </p>
+        <button  class="shadow-lg w-fit text-[#2275AD] px-4 py-3 rounded-full font-semibold">{{buttonText}}</button>
+    </div>
+    <div class="flex items-center justify-center">
+      <img class="w-[100%]" [src]="'../../assets/' + image + '.png'" alt="" />
+    </div>
+  </div>
+</div>
