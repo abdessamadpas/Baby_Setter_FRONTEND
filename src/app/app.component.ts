@@ -1,10 +1,9 @@
 import { Component } from '@angular/core';
-import { HeaderComponent } from './components/landingPage/header/header.component';
+import { HeaderComponent } from './pages/landing-page/header/header.component';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
-  providers: [HeaderComponent]
   
 })
 export class AppComponent {
