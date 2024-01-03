@@ -14,13 +14,13 @@ import { NgIconsModule } from '@ng-icons/core';
 
 @NgModule({
   declarations: [
-    LandingPageComponent,
-    HeaderComponent,
     BannerComponent,
+    FooterComponent,
+    HeaderComponent,
     ProcessCardComponent,
     ProfileCardComponent,
     ServiceCardComponent,
-    FooterComponent,
+    LandingPageComponent,
    
   ],
   imports: [

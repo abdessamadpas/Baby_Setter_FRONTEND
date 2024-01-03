@@ -5,5 +5,13 @@ import { Component } from '@angular/core';
   templateUrl: './header-home.component.html',
 })
 export class HeaderHomeComponent {
+  isMenuVisible = false;
 
+  toggleMenu() {
+    this.isMenuVisible = !this.isMenuVisible;
+  }
+
+  openMenu() {
+    this.isMenuVisible = false;
+  }
 }

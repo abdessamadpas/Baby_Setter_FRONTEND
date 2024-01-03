@@ -1,0 +1,17 @@
+
+
+<div class="absolute top-full left-0 mt-2 w-64 bg-white border rounded shadow-md" *ngIf="isOpen">
+  <button (click)="selectAll()">Select All</button>
+  <button (click)="clearSelection()">Clear Selection</button>
+    <ul class="list-none p-0 m-0">
+      <li *ngFor="let option of options" class="p-2">
+        <label>
+          <input type="checkbox" [(ngModel)]="selectedOptions[option]" />
+          {{ option }}
+        </label>
+      </li>
+    </ul>
+    
+  
+  </div>
+  

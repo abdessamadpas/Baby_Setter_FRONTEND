@@ -11,3 +11,9 @@ body {
   
   }
   /* Your CSS stylesheet */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+mat-icon{
+  font-family: 'Material Icons' !important;
+}

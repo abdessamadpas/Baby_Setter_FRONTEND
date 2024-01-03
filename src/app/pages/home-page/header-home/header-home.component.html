@@ -2,42 +2,45 @@
   <div
     class="flex justify-between items-center px-[14px] py-[20px] w-full h-full"
   >
-    <div
-      class="text-[20px] font-extrabold text-[#A51B65] flex gap-10 justify-center items-center"
-    >
+    <div *ngIf="!isMenuVisible" class="text-[20px] font-extrabold text-[#A51B65] flex gap-10 justify-center items-center">
       <p>BabbySitter</p>
     </div>
-    <div>
+    <div class="flex flex-row border-2 border-[#A51B65] rounded-[10px] px-[10px] py-[5px] text-[#A51B65] text-[12px] font-normal w-[50%]">
       <input
         type="text"
-        class="border-2 border-[#A51B65] rounded-[10px] px-[10px] py-[5px] text-[#A51B65] text-[12px] font-normal"
+        class="w-[700px] border-none outline-none"
         placeholder="Search"
       />
+      <div class="text-xs "><ng-icon name="featherSearch" color="black"></ng-icon></div>
     </div>
 
-    <div class="flex justify-center items-center gap-2 md:gap-8">
-      <div
-        class="flex justify-center w-8 h-8 items-center bg-[#D235651A] rounded-full relative"
-      >
-        <div
-          class="bg-[#D23565] w-3 h-3 absolute top-0 right-0 text-xs text-white rounded-full flex justify-center items-center"
-        >
+      <div  class="flex justify-center items-center  md:gap-4 mr-6">
+        <div class="md:hidden mt-0" (click)="toggleMenu()">
+          <ng-icon name="featherMenu" color="black" ></ng-icon>
+        </div>
+        <div *ngIf="!isMenuVisible" class="hidden md:flex md:justify-center md:w-8 md:h-8 md:items-center md:bg-[#D235651A] md:rounded-full md:relative">
+        <div class="bg-[#D23565] w-3 h-3 absolute top-0 right-0 text-xs text-white rounded-full flex justify-center items-center">
           1
         </div>
         <ng-icon name="ionNotifications" color="black"> </ng-icon>
+        </div>
+        <div *ngIf="!isMenuVisible" class="hidden md:flex md:justify-center md:w-8 md:h-8 md:items-center md:bg-[#D235651A] md:rounded-full md:relative">
+          <div class="bg-[#D23565] w-3 h-3 absolute top-0 right-0 text-xs text-white rounded-full flex justify-center items-center">
+              1
+          </div>
+          <ng-icon name="ionChatboxEllipses" color="black"> </ng-icon> 
+        </div>
+        <div *ngIf="!isMenuVisible" class="hidden md:flex md:justify-center md:w-8 md:h-8 md:items-center md:bg-[#D235651A] md:rounded-full md:relative">
+          <div class="bg-[#D23565] w-3 h-3 absolute top-0 right-0 text-xs text-white rounded-full flex justify-center items-center">
+            1
+          </div>
+          <ng-icon name="ionPerson" color="black"> </ng-icon> 
+        </div> 
+        <div *ngIf="isMenuVisible" class="md:hidden flex justify-center w-8 h-8 items-center bg-[#D235651A] rounded-full relative">
+          <div class="bg-[#D23565] w-3 h-3 absolute top-0 right-0 text-xs text-white rounded-full flex justify-center items-center">
+            1
+          </div>
+          <app-menu (openMenu)="openMenu()"></app-menu>
+        </div>
       </div>
-      <div class="text-[14px] font-normal text-[#0D062D]">Abdessamad Pas</div>
-    </div>
-  </div>
-  <div
-    class="flex items-center justify-start px-5 py-1 border-t-2 border-[#F1F3F9]"
-  >
-    <img src="{Home}" alt="" width="{15}" />
-    <div class="gap-2">
-      <span class="text-[12px] font-normal ml-2">/ Page</span>
-      <span class="text-[12px] font-normal ml-2">/ Page</span>
-      <span class="text-[12px] font-normal ml-2">/ Page</span>
-      <span class="text-[12px] font-normal ml-2">/ Page</span>
-    </div>
-  </div>
 </div>

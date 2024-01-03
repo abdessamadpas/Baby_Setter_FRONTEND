@@ -19,18 +19,22 @@ import {ionNotifications} from '@ng-icons/ionicons';
 import { PostPageComponent } from './pages/post-page/post-page.component';
 import { LandingPageModule } from './pages/landing-page/landing-page.module';
 import { HomePageModule } from './pages/home-page/home-page.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatIconModule } from '@angular/material/icon';
+import { FilterModule } from './pages/home-page/filter/filter.module';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-  
   ],
   imports: [
     BrowserModule,
     HomePageModule,
     LandingPageModule,
     AppRoutingModule,
+    BrowserAnimationsModule,  
+    MatIconModule
     
   ],
   providers: [

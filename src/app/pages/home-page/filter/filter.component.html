@@ -1,0 +1,12 @@
+
+
+<div class="relative">
+  <button
+  class="w-64 px-4 py-2 border rounded focus:outline-none focus:ring focus:border-blue-300"
+  (click)="toggleDropdown()"
+>
+  Sélectionner une option 
+</button>
+<app-dropdown  [options]="filterOptions" (optionSelected)="selectOption($event)" [isOpen]="isDropdownOpen"></app-dropdown>
+  </div>
+  
