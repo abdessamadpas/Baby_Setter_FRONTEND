@@ -21,7 +21,6 @@ import { NgIconsModule } from '@ng-icons/core';
     ProfileCardComponent,
     ServiceCardComponent,
     LandingPageComponent,
-   
   ],
   imports: [
     CommonModule,

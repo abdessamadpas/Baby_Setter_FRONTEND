@@ -1,0 +1,27 @@
+<div class="rounded-lg border-2 border-[#A51B65] max-w-[45%] h-[140px] flex flex-row ">
+    <div class="w-[30%] flex items-center justify-center">
+        <img [src]="'../../assets/' + image + '.jpg'" alt="" class="max-w-[80%] max-h-[80%] "    />
+    </div>
+    <div class="flex flex-col w-full">
+        <div class="flex flex-row h-[30%] space-x-56">
+            <div class="w-[40%] flex items-center text-lg font-bold text-[#A51B65]">
+              {{name}}
+            </div>
+            <div class="w-[10%] flex items-center justify-center">
+                <ng-icon [name]="currentIcon" [color]="currentColor" (click)="changerIcone()"></ng-icon>
+            </div>
+        </div>
+        <div class="w-[100%] h-[55%] flex items-center">
+            {{ description }}
+        </div>
+        <hr class="w-[40%] font-" style="border-top-color: #A51B65;">    
+        <div class="flex flex-row h-[15%] space-x-36">
+            <div class="w-[50%]">
+                Experience : <1 year
+              </div>
+              <div class="w-[30%]">
+                  MAD {{ price }}/hr
+              </div>
+        </div>
+    </div>
+</div>

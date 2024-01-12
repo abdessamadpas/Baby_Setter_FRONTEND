@@ -18,6 +18,8 @@ import { MenuComponent } from './header-home/menu/menu.component';
 import { DropdownComponent } from './filter/dropdown/dropdown.component';
 import { FilterModule } from './filter/filter.module';
 import { HeaderHomeModule } from './header-home/header-home.module';
+import { BSCardComponent } from './bs-card/bs-card.component';
+import { MapComponent } from './map/map.component';
 
 
 
@@ -26,6 +28,8 @@ import { HeaderHomeModule } from './header-home/header-home.module';
 @NgModule({
   declarations: [
     HomePageComponent,
+    BSCardComponent,
+    MapComponent,
   ],
   imports: [
     CommonModule,

@@ -30,13 +30,13 @@ import { FilterModule } from './pages/home-page/filter/filter.module';
   ],
   imports: [
     BrowserModule,
-    HomePageModule,
+    HomePageModule, 
     LandingPageModule,
     AppRoutingModule,
     BrowserAnimationsModule,  
     MatIconModule
-    
   ],
+
   providers: [
     provideClientHydration(),
     provideNgIconsConfig({
